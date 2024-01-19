@@ -47,8 +47,6 @@ To change branch we use:
 
 Usually, what is the name of the main branch of a repository?
 
-- A. `master`
-- B. `feature`
 - C. `main`
 
 ### Question 9
