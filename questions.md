@@ -82,3 +82,27 @@ How can I find out what changes were made in the last commit?
 - A. Use `git diff HEAD HEAD~1`.
 - B. Use **gitLens** in VSCode with the history view.
 - C. Use _Thonny_ to debug the code.
+
+
+Question 1
+A. Un pas validé dans le code qui apparaît dans l'historique du dépôt.
+Question 2
+C. git status
+Question 3
+B. Un curseur pointant vers un commit que vous pouvez déplacer avec git checkout.
+Question 4
+B. Une plateforme pour partager du code en ligne.
+Question 5
+A. Gérer plusieurs versions d'un code de logiciel/script
+C. Explorer l'historique du code d'un logiciel
+Question 6
+B. Dans un dossier invisible .git pour chaque dépôt.
+Question 7
+B. git checkout <branch name>
+Question 8
+C. main
+Question 9
+B. Une ligne d'historique d'un dépôt
+Question 10
+A. Utiliser git diff HEAD HEAD~1.
+
