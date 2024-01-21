@@ -1,0 +1,2 @@
+for listing the branches: git branch
+I have only one branch
