@@ -1,0 +1,5 @@
+#afficher les branches
+git branch
+
+#afficher en plus les branches distantes
+get branch -a

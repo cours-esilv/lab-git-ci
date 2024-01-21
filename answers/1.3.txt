@@ -1,0 +1,4 @@
+git clone https://github.com/sbien1208/lab-git-ci.git
+git add identity.md
+git commit -m "identité"
+git push
