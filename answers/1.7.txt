@@ -1,0 +1,14 @@
+At first I didn't have the branch snape so I followed these steps:
+git remote -v
+git remote add upstream https://github.com/cours-esilv/lab-git-ci
+git pull upstream
+git checkout -b snape --track upstream/snape
+
+
+to merge changes from snape into main branch:
+git merge snape
+
+delete snape branch locally:
+i have to switched in the branch main: git checkout main
+and after delete snape
+git branch -d snape
