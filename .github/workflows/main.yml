@@ -1,4 +1,4 @@
-name: Java Build
+name: Java Build and Test
 
 on:
   push:
@@ -24,3 +24,10 @@ jobs:
     # Compile your application with Maven
     - name: Build with Maven
       run: mvn --batch-mode --update-snapshots package
+
+    # Publish unit test results
+    - name: Publish Unit Test Results
+      uses: EnricoMi/publish-unit-test-result-action@v1
+      if: always() # Ensure this step runs even if previous steps fail
+      with:
+        files: target/**/*.xml
