@@ -1,4 +1,4 @@
-name: Java Build and Test
+name: Java Build and Publish Artifact
 
 on:
   push:
@@ -31,3 +31,10 @@ jobs:
       if: always() # Ensure this step runs even if previous steps fail
       with:
         files: target/**/*.xml
+
+    # Publish the artifact from the 'target' directory
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.4
+      with:
+        name: my-app-1.0
+        path: target/*
