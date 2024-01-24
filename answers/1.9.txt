@@ -1,0 +1,3 @@
+git checkout main
+git push origin main
+git push --all origin
