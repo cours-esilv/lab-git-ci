@@ -8,3 +8,10 @@
       # Compile notre application
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
+
+      # Publie les résultats de test
+      - name: Publish Unit Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v1
+        if: always()
+        with:
+          files: target/**/*.xml
