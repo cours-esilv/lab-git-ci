@@ -14,6 +14,7 @@
         uses: EnricoMi/publish-unit-test-result-action@v1
         if: always()
         with:
+
           files: target/**/*.xml
       
       # Publie les fichiers présents dans le dossier target dans un build artifact
@@ -22,3 +23,6 @@
         with:
           name: my-app-1.0
           path: target/*
+
+          files: target/**/*.xml
+
