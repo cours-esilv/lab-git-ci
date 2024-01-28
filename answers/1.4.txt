@@ -1,0 +1,2 @@
+Command used to see the logs :
+- git log 
