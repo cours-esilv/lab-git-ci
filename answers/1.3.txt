@@ -1,0 +1,3 @@
+Commands used to commit and push :
+- git commit -am "message de commit"
+- git push
