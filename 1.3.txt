@@ -1,0 +1,3 @@
+Commands used to commit and push : 
+- git commit -am "new commit"
+- git push
