@@ -10,17 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps :
-      # Checkout the code
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      # Set up JDK 8
-      - name: Set up JDK 8
-        uses: actions/setup-java@v2
-        with:
-          java-version: '8'
-          distribution: 'adopt'
-
       # Build with Maven
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
@@ -35,3 +24,17 @@ jobs:
       # Compile notre application
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
+
+      # Publie les résultats de test
+      - name: Publish Unit Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v1
+        if: always()
+        with:
+          files: target/**/*.xml
+      
+      # Publie les fichiers présents dans le dossier target dans un build artifact
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2.2.4
+        with:
+          name: my-app-1.0
+          path: target/*
