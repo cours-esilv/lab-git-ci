@@ -8,9 +8,17 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+    # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Run a placeholder step
-      run: echo "Hello, GitHub Actions!"
+      # Step 2: Set up JDK 8
+      - name: Set up JDK 8
+        uses: actions/setup-java@v2
+        with:
+          java-version: '8'
+          distribution: 'adopt'
+
+      # Step 3: Build with Maven
+      - name: Build with Maven
+        run: mvn --batch-mode --update-snapshots package
