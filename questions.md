@@ -8,7 +8,7 @@ What is a commit?
 - B. One of the multiple histories contained in a git repository.
 - C. Any recent modification made to one of the files in the repository.
 
-### Question 2
+### Question 2 
 
 How can I find out the current state of a repository?
 
