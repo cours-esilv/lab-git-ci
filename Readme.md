@@ -156,7 +156,7 @@ So we're going to modify the pipeline to build our java application.
 
 To do this, modify the `.github/workflows/main.yml` file to add the following build steps:
 
-```yaml
+```yaml 
       # Installe java 8 sur l'agent
       - name: Set up JDK 8
         uses: actions/setup-java@v2
